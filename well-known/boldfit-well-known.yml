@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of https://www.boldfit.com/.well-known/*
+host: www.boldfit.com
+notes: >-
+  Boldfit runs on Shopify. The storefront exposes the Shopify Customer Account
+  OpenID Connect discovery document (shop-scoped issuer). Notably it advertises
+  a customer-account-mcp-api:full scope alongside the customer-account-api.
+  No security.txt or api-catalog is published.
+paths:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: boldfit-openid-configuration.json
+  issuer: https://shopify.com/authentication/9646211123
+  scopes_supported:
+  - openid
+  - email
+  - customer-account-api:full
+  - customer-account-mcp-api:full
+- path: /.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: boldfit-oauth-authorization-server.json
+  issuer: https://shopify.com/authentication/9646211123
+- path: /.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null

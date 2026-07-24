@@ -1,0 +1,19 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.boldfit.com/.well-known/openid-configuration
+docs: https://shopify.dev/docs/api/customer
+notes: >-
+  OAuth scopes advertised by the Boldfit Shopify Customer Account OIDC discovery
+  document. These are Shopify-platform scopes exposed on this shop's issuer, not
+  scopes Boldfit authored. Captured verbatim from scopes_supported.
+oauth2:
+  issuer: https://shopify.com/authentication/9646211123
+  scopes:
+  - name: openid
+    description: OpenID Connect sign-in; returns an ID token identifying the customer.
+  - name: email
+    description: Access to the authenticated customer's email address claim.
+  - name: customer-account-api:full
+    description: Full access to the Shopify Customer Account API on behalf of the signed-in shopper (orders, profile, addresses).
+  - name: customer-account-mcp-api:full
+    description: Full access to the Shopify Customer Account MCP API surface for the signed-in shopper.
