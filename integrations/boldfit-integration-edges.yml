@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/boldfit/integrations
+- https://n8n.io/integrations/boldfit/
+- https://composio.dev/toolkits/boldfit
+- https://monid.ai/tools/boldfit
+checked:
+- https://composio.dev/toolkits/boldfit
+- https://monid.ai/tools/boldfit
+- https://n8n.io/integrations/boldfit/
+- https://zapier.com/apps/boldfit/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
